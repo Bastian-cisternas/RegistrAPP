@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ion-text-center">
+      <ion-title class="colortitulo">Registr<span>APP</span></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+    <ion-card #square1 class="card1"> 
+      <ion-card-header>
+        <ion-card-title >Bienvenido</ion-card-title>
+      </ion-card-header>
+    <ion-card-content>
+      Usuario: {{user.usuario}}
+    </ion-card-content>
+    </ion-card>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-title class="card" >Leer Codigo QR</ion-title>
+    </ion-card-header>
+  <ion-card class="card2">
+    <ion-card-content>
+      <ion-icon class="qr" name="qr-code-outline"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <br>
+</ion-card>
+</ion-content>
+
+<ion-footer>
+  <div class="ion-text-center">
+    <ion-button routerLink="/login" color="warning">Cerrar Sesion</ion-button>
+  </div>
+</ion-footer>
+

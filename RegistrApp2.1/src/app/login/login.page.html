@@ -1,0 +1,46 @@
+<grid class="sm">
+<ion-header>
+  <ion-toolbar>
+    <div class="ion-text-center">
+      <ion-title class="colortitulo">Registr<span>APP</span></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+</grid>
+
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Iniciar Sesion</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="user.usuario" minlength="3" maxlength="15"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" minlength="4" maxlength="15"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<div class="container">
+  <ion-footer>
+    <div class="ion-text-center">
+      <ion-title class="colorfooter">¿Olvidaste tu contraseña?</ion-title>
+      <ion-button routerLink="/recuperar" color="warning">Recuperar</ion-button>
+    </div>
+  </ion-footer>
+</div>

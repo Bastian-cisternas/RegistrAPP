@@ -1,0 +1,92 @@
+ion-toolbar{
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    font-size: 50px;
+}
+
+ion-content{
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --ion-background-color:rgb(17, 18, 80);
+    position: inherit;
+    text-align: center !important;
+}
+
+ion-title{
+    padding-left: 10%;
+}
+
+ion-item{
+    --padding-bottom: 10px;
+}
+
+ion-card{
+    --ion-background-color:rgb(239, 239, 243);
+    border-radius: 8%;
+    padding: 10px;
+    top: 30px;
+}
+
+
+.colortitulo{
+    background-color:rgb(0, 0, 0);
+    background-size: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 60px;
+    position: relative;
+}
+
+span{
+    color:  #fbc30c ;
+}
+
+
+.ion-text-center{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.card1{
+    --ion-background-color: #fbc30c ;
+    border-radius: 8%;
+    padding: 10px;
+    top: 30px;
+    color: black;
+}
+
+ion-footer{
+    --padding-top: 0px;
+    --padding-bottom: 20px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    font-size: 40px;
+}
+
+.colorfooter{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 20px;
+}
+
+.bottom{
+    --ion-background-color: black;
+    font-size: 20px;
+    height: 30px;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.square {  
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
