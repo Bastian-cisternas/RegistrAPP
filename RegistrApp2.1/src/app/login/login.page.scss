@@ -20,6 +20,11 @@ ion-title{
     padding-left: 10%;
 }
 
+ion-title.ios{
+    width: 120%;
+    font-size: 20px;
+}
+
 ion-item{
     --padding-bottom: 10px;
 }
@@ -38,7 +43,6 @@ ion-footer{
     --padding-start: 0px;
     font-size: 40px;
 }
-
 .colortitulo{
     background-color:rgb(0, 0, 0);
     background-size: 90px;
@@ -46,6 +50,15 @@ ion-footer{
     font-size: 30px;
     height: 60px;
     position: relative;
+}
+.colortitulo.ios{
+    background-color:rgb(0, 0, 0);
+    background-size: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 60px;
+    position: relative;
+    width: 120%;
 }
 
 span{

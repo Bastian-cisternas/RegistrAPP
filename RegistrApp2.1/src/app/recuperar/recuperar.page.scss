@@ -20,6 +20,10 @@ ion-title{
     padding-left: 10%;
 }
 
+ion-title.ios{
+    padding-left: 10%;
+    width: 120%;
+}
 ion-item{
     --padding-bottom: 10px;
 }
@@ -59,6 +63,14 @@ span{
     color: black;
 }
 
+.card1.ios{
+    --ion-background-color: #fbc30c ;
+    border-radius: 8%;
+    padding: 0px;
+    top: 30px;
+    color: black;
+}
+
 ion-footer{
     --padding-top: 0px;
     --padding-bottom: 20px;
@@ -84,9 +96,17 @@ ion-footer{
     font-size: 30px;
 }
 
+.icon.ios{
+    font-size: 20px;
+}
 .square {  
     width: 100px;
     height: 100px;
     background: rgba(0, 0, 0, 0.5);
     margin: 10px;
+}
+
+.recuperar.ios{
+    position: relative;
+    font-size: 20px;
 }
