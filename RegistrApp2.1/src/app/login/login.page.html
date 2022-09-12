@@ -7,34 +7,69 @@
   </ion-toolbar>
 </ion-header>
 </grid>
-
 <ion-content>
   <br>
   <br>
+<div class="container1">
+  <div class="tabs">
+    <br>
+    <label class="tab" for="signin">
+      <div class="text">Alumno</div>
+    </label>
+    <label class="tab" for="register">
+      <div class="text">Docente</div>
+    </label>
+  </div>
+  <input type="radio" name="tab" id="signin" checked="checked"/>
+  <input type="radio" name="tab" id="register"/>
+  
+  <div class="pages">
+    
+    <div class="page">
+      <ion-card-header>
+    <ion-title class="titulos">Alumno</ion-title>
+  </ion-card-header>
   <br>
   <br>
-  <br>
-  <ion-card>
-    <ion-card-header>
-      <ion-title>Iniciar Sesion</ion-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item lines="full">
-        <ion-label position="stacked">Usuario</ion-label>
-        <ion-input type="text" [(ngModel)]="user.usuario" minlength="3" maxlength="15"></ion-input>
-      </ion-item>
-      <ion-item lines="full">
-        <ion-label position="stacked">Password</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password" minlength="4" maxlength="15"></ion-input>
-      </ion-item>
+      <div class="input">
+        <ion-label class="title">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="alumno.usuario" minlength="3" maxlength="15"></ion-input>
+      </div>
+      <br>
+      <div class="input">
+        <ion-label class="title">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="alumno.password" minlength="4" maxlength="15"></ion-input>
+      </div>
+      <br>
       <ion-row>
         <ion-col>
           <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
         </ion-col>
       </ion-row>
       <ion-button routerLink="/recuperar" class="olvide" color="dark" fill="clear" size="full">¿Olvidaste tu contraseña?</ion-button>
-    </ion-card-content>
-  </ion-card>
+    </div>
+    <div class="page signup">
+      <ion-card-header>
+        <ion-title class="titulos">Docente</ion-title>
+      </ion-card-header>
+      <br>
+      <div class="input">
+        <ion-label class="title">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="docente.usuario" minlength="3" maxlength="15"></ion-input>
+      </div>
+      <br>
+      <div class="input">
+        <ion-label class="title">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="docente.password" minlength="4" maxlength="15"></ion-input>
+      </div>
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="full" (click)="ingresa()">Ingresar</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-button routerLink="/recuperar" class="olvide" color="dark" fill="clear" size="full">¿Olvidaste tu contraseña?</ion-button>
+    </div>
+    </div>
+</div>
 </ion-content>
-
-

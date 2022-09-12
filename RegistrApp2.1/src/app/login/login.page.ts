@@ -10,23 +10,28 @@ import { ToastController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
   
-  user = {
+  alumno = {
     usuario: "",
     password: ""
   }
   
+  docente = {
+    usuario: "",
+    password: ""
+  }
+
   field: string = ""
   constructor(private router: Router, public toastController: ToastController) { } 
 
   ngOnInit() {
   }
   ingresar() {
-    if (this.validateModel(this.user)) {
+    if (this.validateModel(this.alumno)) {
       this.presentToast("Bienvenido")
      
       let navigationExtras: NavigationExtras = {
         state: {
-          user: this.user 
+          user: this.alumno
         }
       };
       this.router.navigate(['/home'], navigationExtras); 
@@ -56,5 +61,19 @@ export class LoginPage implements OnInit {
     });
     toast.present();
   }
-
+  ingresa() {
+    if (this.validateModel(this.docente)) {
+      this.presentToast("Bienvenido")
+     
+      let navigationExtras: NavigationExtras = {
+        state: {
+          user: this.docente
+        }
+      };
+      this.router.navigate(['/docente'], navigationExtras); 
+    }
+    else{
+      this.presentToast("Falta ingresar "+this.field,5000)
+    }
+  }
 }
