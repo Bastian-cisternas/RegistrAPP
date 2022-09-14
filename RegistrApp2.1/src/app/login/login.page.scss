@@ -47,36 +47,35 @@ ion-footer{
     height: calc(100% - 145px);
 }
 .colortitulo{
-    background-color:rgb(0, 0, 0);
     background-size: 90px;
     color: rgb(255, 255, 255);
     font-size: 30px;
     height: 60px;
     position: relative;
+    border-radius: 5px;
+    top: 30px;
+    text-shadow: #525252 0.2em 0.2em;
 }
 .colortitulo.ios{
-    background-color:rgb(0, 0, 0);
-    background-size: 90px;
+   background-size: 90px;
     color: rgb(255, 255, 255);
     font-size: 30px;
     height: 60px;
     position: relative;
     width: 120%;
+    border-radius: 5px;
+    top: 30px;
 }
+
+
 
 span{
     color:  #fbc30c ;
 }
 
-.colorfooter{
-    background-color:rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    height: 20px;
-}
+
 
 .ion-text-center{
-    background-color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -100,7 +99,7 @@ span{
     margin:40px auto;
     background:#FFF;
     border-radius:10px;
-    box-shadow:0px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: rgb(8, 8, 8) 5px 5px 10px 8px ;
     display:flex;
     flex-direction:column;
     overflow:hidden;
@@ -121,7 +120,7 @@ span{
        min-width:100%;
        padding:20px 15px;
        padding-top:0px;
-       background:linear-gradient(to left, #955DFF, #6FAAFF);
+       background:linear-gradient(  rgb(29, 124, 150) 35%, rgba(37,62,185,1) 100%,rgb(27, 23, 104) 0%);
        &:nth-of-type(1){
           .input { transform:translateX(-100%) scale(0.5); }
        }
@@ -136,7 +135,7 @@ span{
           
        }
        &.signup{
-          background:linear-gradient(to left, #6FAAFF, #955DFF);
+         background:linear-gradient(  rgb(29, 124, 150) 35%, rgba(37,62,185,1) 100%,rgb(27, 23, 104) 0%);
        }
        .title{
           margin-bottom:10px;
@@ -175,20 +174,48 @@ span{
        }
     }
  }
- 
+
  .tabs{
+   display: flex;
+   justify-content: space-between;
+    flex-direction: row;
+ }
+
+ .tabs2{
+   max-height:50px;
+   height:50px;
+   display:flex;
+   background:#FFF;
+   width: 130px;
+   .tab{
+      flex:1;
+      color:#5D708A;
+      text-align:center;
+      line-height:50px;
+      transition: 0.2s;
+      cursor: pointer;
+      top:-0.1625rem;
+      .text{
+         font-size:14px;
+         transform:scale(1);
+         transition:all 0.2s;
+         
+      }
+   }  
+}
+
+ .tabs1{
     max-height:50px;
     height:50px;
     display:flex;
     background:#FFF;
-    
+    width: 130px;
     .tab{
        flex:1;
        color:#5D708A;
        text-align:center;
        line-height:50px;
-       transition:all 0.2s;
-       box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+       transition: 0.2s;
        cursor: pointer;
        top:-0.1625rem;
        .text{
@@ -200,6 +227,23 @@ span{
     }  
  }
  
+.tabs1.active{
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(145, 144, 144, 0.5) -3px -3px 6px 1px inset;
+}
+
+.tabs1:hover{
+   box-shadow: rgb(122, 123, 123) 3px 3px 6px 0px inset, rgba(42, 41, 41, 0.5) -3px -3px 6px 1px inset;
+}
+
+.tabs2.active{
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(145, 144, 144, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+.tabs2:hover{
+   box-shadow: rgb(122, 123, 123) 3px 3px 6px 0px inset, rgba(31, 31, 31, 0.5) -3px -3px 6px 1px inset;
+}
+
 
 
  input[type=radio]{ display:none; }
@@ -275,3 +319,6 @@ ion-input{
         font-family: 'Raleway', sans-serif;
         color:rgba(253, 248, 248, 0.885);
     }
+
+
+
