@@ -5,7 +5,7 @@ ion-toolbar{
     --padding-start: 0px;
     font-size: 50px;
 }
-
+//ponerlos en las otras paginas solo ion-content para el color de fondo
 ion-content{
     --padding-top: 20px;
     --padding-bottom: 20px;
@@ -46,6 +46,7 @@ ion-footer{
     top: 50%;
     height: calc(100% - 145px);
 }
+//poner esto para el texto
 .colortitulo{
     background-size: 90px;
     color: rgb(255, 255, 255);
@@ -68,7 +69,7 @@ ion-footer{
 }
 
 
-
+//para el titulo
 span{
     color:  #fbc30c ;
 }
@@ -92,7 +93,7 @@ span{
 
 
 
- 
+ //de aqui hacia abajo es para el formulario
  .container1{
     min-height:300px;
     max-width:250px;
