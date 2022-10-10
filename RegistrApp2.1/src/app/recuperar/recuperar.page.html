@@ -1,14 +1,13 @@
-<grid class="sm">
+<ion-content>
 <ion-header>
-  <ion-toolbar>
+  <div class="header">
     <div class="ion-text-center">
       <ion-title class="colortitulo">Registr<span>APP</span></ion-title>
     </div>
-  </ion-toolbar>
+  </div>
 </ion-header>
-</grid>
 
-<ion-content>
+
   <br>
   <br>
   <ion-card class="card1"> 
@@ -36,13 +35,13 @@
       </ion-card-content>
     </ion-card-header>
   </ion-card>
-</ion-content>
 
 <div class="container">
   <ion-footer>
     <div class="ion-text-center">
       <ion-title class="colorfooter"> </ion-title>
-      <ion-button routerLink="/login" color="warning">Salir</ion-button>
+      <ion-button [routerLink]="['/login']" color="warning">Salir</ion-button>
     </div>
   </ion-footer>
 </div>
+</ion-content>
